@@ -14,8 +14,8 @@ const SectionHeading = ({ label, title, subtitle }: SectionHeadingProps) => (
     transition={{ duration: 0.6 }}
     className="mb-16 text-center"
   >
-    <span className="mb-3 inline-block font-heading text-sm font-semibold uppercase tracking-[0.3em] text-primary">
-      {label}
+     <span className="mb-3 inline-block font-heading text-xs font-medium tracking-[0.2em] text-primary">
+       // {label}
     </span>
     <h2 className="mb-4 font-display text-3xl font-bold tracking-tight text-foreground md:text-5xl">
       {title}

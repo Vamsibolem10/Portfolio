@@ -16,9 +16,9 @@ const Scene = () => {
         dpr={[1, 1.5]}
       >
         <Suspense fallback={null}>
-          <ambientLight intensity={0.1} />
-          <pointLight position={[10, 10, 10]} intensity={0.3} color="#3b82f6" />
-          <pointLight position={[-10, -10, -10]} intensity={0.2} color="#8b5cf6" />
+           <ambientLight intensity={0.08} />
+           <pointLight position={[10, 10, 10]} intensity={0.3} color="#22c55e" />
+           <pointLight position={[-10, -10, -10]} intensity={0.2} color="#06b6d4" />
 
           <ParticleField count={1500} />
           <HolographicEarth />

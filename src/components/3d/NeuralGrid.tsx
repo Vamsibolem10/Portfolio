@@ -45,9 +45,9 @@ const NeuralGrid = () => {
             vec2 grid = abs(fract(vUv * 40.0 - 0.5) - 0.5) / fwidth(vUv * 40.0);
             float line = min(grid.x, grid.y);
             float gridLine = 1.0 - min(line, 1.0);
-            vec3 blue = vec3(0.2, 0.4, 1.0);
-            vec3 purple = vec3(0.5, 0.2, 0.8);
-            vec3 color = mix(blue, purple, vUv.y);
+            vec3 green = vec3(0.13, 0.77, 0.37);
+            vec3 cyan = vec3(0.02, 0.71, 0.83);
+            vec3 color = mix(green, cyan, vUv.y);
             float fade = 1.0 - smoothstep(0.0, 0.5, length(vUv - 0.5));
             float alpha = gridLine * 0.12 * fade;
             gl_FragColor = vec4(color, alpha);

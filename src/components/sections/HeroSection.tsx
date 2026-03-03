@@ -24,9 +24,9 @@ const HeroSection = () => {
           className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2"
         >
           <span className="h-2 w-2 animate-pulse rounded-full bg-primary" />
-          <span className="font-heading text-xs font-medium uppercase tracking-[0.2em] text-primary">
-            Available for Opportunities
-          </span>
+           <span className="font-heading text-xs font-medium tracking-[0.2em] text-primary">
+             ~/status --available
+           </span>
         </motion.div>
 
         {/* Name */}
@@ -73,14 +73,14 @@ const HeroSection = () => {
         >
           <a
             href="#projects"
-            className="group inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:shadow-[0_0_30px_hsl(210_100%_56%/0.4)]"
+             className="group inline-flex items-center gap-2 rounded border border-primary bg-primary/10 px-8 py-3 font-heading text-sm font-semibold tracking-wider text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_25px_hsl(142_70%_45%/0.3)]"
           >
             View Projects
             <span className="transition-transform group-hover:translate-x-1">→</span>
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-lg border border-border px-8 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-foreground transition-all duration-300 hover:border-primary/40 hover:text-primary"
+             className="inline-flex items-center gap-2 rounded border border-border px-8 py-3 font-heading text-sm font-semibold tracking-wider text-foreground transition-all duration-300 hover:border-primary/40 hover:text-primary"
           >
             Get in Touch
           </a>
@@ -93,9 +93,9 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 1.5 }}
           className="pointer-events-none absolute -left-10 top-1/3 hidden lg:block"
         >
-          <div className="animate-float rounded-lg border border-primary/10 bg-card/50 px-4 py-2 font-mono text-xs text-primary/40 backdrop-blur-sm">
-            model.fit(X_train, y_train)
-          </div>
+           <div className="animate-float rounded border border-primary/20 bg-card/80 px-4 py-2 font-mono text-xs text-primary/60 backdrop-blur-sm">
+             <span className="text-secondary/60">$</span> model.fit(X_train, y_train)
+           </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -103,9 +103,9 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 1.8 }}
           className="pointer-events-none absolute -right-10 top-1/2 hidden lg:block"
         >
-          <div className="animate-float-delayed rounded-lg border border-secondary/10 bg-card/50 px-4 py-2 font-mono text-xs text-secondary/40 backdrop-blur-sm">
-            contract.deploy()
-          </div>
+           <div className="animate-float-delayed rounded border border-secondary/20 bg-card/80 px-4 py-2 font-mono text-xs text-secondary/60 backdrop-blur-sm">
+             <span className="text-primary/60">&gt;</span> contract.deploy()
+           </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -113,9 +113,9 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 2.1 }}
           className="pointer-events-none absolute bottom-1/3 left-10 hidden lg:block"
         >
-          <div className="animate-float-slow rounded-lg border border-accent/10 bg-card/50 px-4 py-2 font-mono text-xs text-accent/40 backdrop-blur-sm">
-            &lt;Canvas camera=&#123;&#123;fov:60&#125;&#125; /&gt;
-          </div>
+           <div className="animate-float-slow rounded border border-accent/20 bg-card/80 px-4 py-2 font-mono text-xs text-accent/60 backdrop-blur-sm">
+             <span className="text-secondary/60">λ</span> &lt;Canvas camera=&#123;&#123;fov:60&#125;&#125; /&gt;
+           </div>
         </motion.div>
       </div>
 

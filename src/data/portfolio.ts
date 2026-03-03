@@ -13,16 +13,16 @@ export interface Skill {
 }
 
 export const skills: Skill[] = [
-  { name: "Python", category: "Languages", level: 95, color: "#3b82f6" },
-  { name: "React", category: "Frontend", level: 92, color: "#06b6d4" },
-  { name: "Node.js", category: "Backend", level: 90, color: "#22c55e" },
-  { name: "MongoDB", category: "Database", level: 88, color: "#10b981" },
+  { name: "Python", category: "Languages", level: 95, color: "#22c55e" },
+  { name: "React", category: "Frontend", level: 92, color: "#2dd4bf" },
+  { name: "Node.js", category: "Backend", level: 90, color: "#4ade80" },
+  { name: "MongoDB", category: "Database", level: 88, color: "#34d399" },
   { name: "AWS", category: "Cloud", level: 85, color: "#f59e0b" },
-  { name: "AI / ML", category: "Intelligence", level: 94, color: "#8b5cf6" },
-  { name: "Blockchain", category: "Web3", level: 91, color: "#ec4899" },
-  { name: "Solidity", category: "Smart Contracts", level: 87, color: "#6366f1" },
-  { name: "TypeScript", category: "Languages", level: 90, color: "#3b82f6" },
-  { name: "Docker", category: "DevOps", level: 82, color: "#0ea5e9" },
+  { name: "AI / ML", category: "Intelligence", level: 94, color: "#a3e635" },
+  { name: "Blockchain", category: "Web3", level: 91, color: "#2dd4bf" },
+  { name: "Solidity", category: "Smart Contracts", level: 87, color: "#22d3ee" },
+  { name: "TypeScript", category: "Languages", level: 90, color: "#38bdf8" },
+  { name: "Docker", category: "DevOps", level: 82, color: "#06b6d4" },
 ];
 
 export interface Project {

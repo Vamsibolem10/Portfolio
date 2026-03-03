@@ -96,7 +96,7 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
       </div>
 
       <div className="flex gap-3">
-        <button className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-2.5 font-heading text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-all hover:shadow-[0_0_20px_hsl(210_100%_56%/0.3)]">
+         <button className="inline-flex items-center gap-2 rounded border border-primary bg-primary/10 px-6 py-2.5 font-heading text-sm font-semibold tracking-wider text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_20px_hsl(142_70%_45%/0.3)]">
           <ExternalLink size={14} />
           View Demo
         </button>

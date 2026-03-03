@@ -10,10 +10,10 @@ const ParticleField = ({ count = 2000 }: { count?: number }) => {
     const colors = new Float32Array(count * 3);
     const sizes = new Float32Array(count);
 
-    const blue = new THREE.Color("#3b82f6");
-    const purple = new THREE.Color("#8b5cf6");
+    const green = new THREE.Color("#22c55e");
     const cyan = new THREE.Color("#06b6d4");
-    const palette = [blue, purple, cyan];
+    const amber = new THREE.Color("#d97706");
+    const palette = [green, cyan, amber];
 
     for (let i = 0; i < count; i++) {
       const i3 = i * 3;

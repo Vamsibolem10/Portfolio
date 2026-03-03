@@ -72,9 +72,9 @@ const ContactSection = () => {
                   placeholder="Tell me about your project..."
                 />
               </div>
-              <button
-                type="submit"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 font-heading text-sm font-semibold uppercase tracking-wider text-primary-foreground transition-all duration-300 hover:shadow-[0_0_30px_hsl(210_100%_56%/0.3)]"
+               <button
+                 type="submit"
+                 className="inline-flex w-full items-center justify-center gap-2 rounded border border-primary bg-primary/10 px-6 py-3 font-heading text-sm font-semibold tracking-wider text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_25px_hsl(142_70%_45%/0.3)]"
               >
                 <Send size={16} />
                 Send Message

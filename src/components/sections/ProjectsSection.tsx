@@ -11,9 +11,10 @@ const ProjectCard = ({ project, index, onClick }: { project: Project; index: num
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay: index * 0.1 }}
+    className="h-full"
   >
-    <GlassCard hover className="group cursor-pointer p-6" >
-      <div onClick={onClick}>
+    <GlassCard hover className="group cursor-pointer p-6 h-full" >
+      <div onClick={onClick} className="h-full flex flex-col">
         <div className="mb-4 flex items-center justify-between">
           <span className="rounded-full border border-primary/20 bg-primary/5 px-3 py-1 font-heading text-xs font-medium uppercase tracking-wider text-primary">
             {project.category}
@@ -31,7 +32,7 @@ const ProjectCard = ({ project, index, onClick }: { project: Project; index: num
           {project.description}
         </p>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mt-auto">
           {project.techStack.map((tech) => (
             <span
               key={tech}
@@ -103,16 +104,15 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
           </a>
         )}
 
-        {project.id !== "homebite" && (
-          project.githubLink ? (
-            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-2.5 font-heading text-sm font-semibold uppercase tracking-wider text-foreground transition-all hover:border-primary/40">
-              GitHub
-            </a>
-          ) : (
-            <button className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-2.5 font-heading text-sm font-semibold uppercase tracking-wider text-foreground transition-all hover:border-primary/40">
-              GitHub
-            </button>
-          )
+        {project.githubLink && (
+          <a
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-2.5 font-heading text-sm font-semibold uppercase tracking-wider text-foreground transition-all hover:border-primary/40"
+          >
+            GitHub
+          </a>
         )}
       </div>
     </motion.div>

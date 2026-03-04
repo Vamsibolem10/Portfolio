@@ -115,7 +115,7 @@ export const projects: Project[] = [
     subtitle: "Consistency Over Intensity",
     description: "A beautifully designed, minimalist habit-tracking application built for those who value consistency over intensity, focusing on 'showing up' every day.",
     techStack: ["React", "Node.js", "MongoDB", "Capacitor"],
-    category: "Mobile Application",
+    category: "Web / Mobile Application",
     gradient: "from-blue-600 to-indigo-600",
     demoLink: "https://show-up-strong-production.up.railway.app/",
   }

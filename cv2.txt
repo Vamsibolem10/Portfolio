@@ -1,0 +1,45 @@
+GITAM DEEMED UNIVERSITY
+GITAM  DEEMED UNIVERSITY
+Programming & Scripting Languages: Python, C, JavaScript, TypeScript, MySQL, PostgreSQL, HTML, CSS.
+Frontend Development: React.js, Next.js, Tailwind CSS, Material UI, Redux, Webpack.
+Backend Development: Node.js, Express.js, REST API, GraphQL, Firebase, Redis, JWT, OAuth.
+Databases: MongoDB, PostgreSQL, MySQL, Redis.
+Cloud Services & DevOps: AWS (Lambda, EC2, S3), Docker, CI/CD.
+Software & Tools: Git, Jupyter Notebook, Microsoft Office, Anaconda, Tableau, Figma.
+Machine Learning & Data Science: Linear Regression, Logistic Regression, Decision Trees, Classification,
+Random Forests, Naïve Bayes, CNN, PySpark, NumPy, Pandas, Matplotlib, SciPy, Scikit-Learn, Seaborn,
+TensorFlow.
+What is Data Science? - IBM
+Introduction to TCP/IP - Yonsei University
+Introduction to Data Analysis Using Excel - Rice University
+Python Programming Essentials - Rice UniversityBOLEM NAGA MOHANA VAMSIDHAR
+AI/ML Engineer & Full Stack Developer
++91 9182204314
+Visakhapatnam, India
+bolemvamsi@gmail.com
+WORK EXPERIENCE
+Hiringhood (SDE & AI/ML Intern) MARCH  2025 - SEPTEMBER 2025
+As a Software Engineer Intern at Hiringhood, I worked on full-stack development using React, TypeScript,
+Redux, Node.js, and MongoDB, along with AWS and the Serverless framework for cloud deployment. I also
+took on the AI/ML role, managing both responsibilities with production-level tasks, some of which are
+already live in production.EDUCATION
+Master of Computer Applications
+2023 - 2026
+Portfolio
+LinkedIn
+GitHub
+Bachelor of Computer Applications
+2020 - 2023
+SOFTWARE SKILLS
+PROJECTS
+Mini Researcher – AI powered research automation tool for data extraction and NLP based query analysis
+using Gemini API.
+JD & CV Match Score – ML driven Flask application that scores job–resume alignment using NLP and LLMs.
+Doc Query Chat – RAG-based document Q&A system with semantic search using LangChain and vector
+databases.
+CV Redactor – FastAPI based AI service that detects and redacts sensitive resume data using NLP.
+AI Mock Tests – AI driven testing platform that generates adaptive assessments and automated scoring.
+Talk to Resume – Conversational AI tool for extracting skills and insights from resumes via NLP.
+Recruiter Co-Pilot – AI powered recruitment assistant for resume screening and intelligent candidate
+shortlisting.
+CERTIFICATES

@@ -6,9 +6,10 @@ interface GlassCardProps {
   className?: string;
   hover?: boolean;
   glow?: "blue" | "purple" | "cyan" | "none";
+  style?: React.CSSProperties;
 }
 
-const GlassCard = ({ children, className, hover = true, glow = "none" }: GlassCardProps) => {
+const GlassCard = ({ children, className, hover = true, glow = "none", style }: GlassCardProps) => {
   const glowMap = {
     blue: "hover:shadow-[0_0_30px_hsl(210_100%_56%/0.2)]",
     purple: "hover:shadow-[0_0_30px_hsl(270_80%_60%/0.2)]",
@@ -18,6 +19,7 @@ const GlassCard = ({ children, className, hover = true, glow = "none" }: GlassCa
 
   return (
     <div
+      style={style}
       className={cn(
         "glass-panel",
         hover && "glass-panel-hover",

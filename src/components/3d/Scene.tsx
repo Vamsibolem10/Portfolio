@@ -1,42 +1,22 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { AdaptiveDpr, Preload } from "@react-three/drei";
-import { EffectComposer, Bloom } from "@react-three/postprocessing";
-import ParticleField from "./ParticleField";
-import HolographicEarth from "./HolographicEarth";
-import NeuralGrid from "./NeuralGrid";
-import FloatingRings from "./FloatingRings";
 
 const Scene = () => {
   return (
-    <div className="fixed inset-0 -z-10">
+    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden bg-background">
       <Canvas
-        camera={{ position: [0, 0, 12], fov: 60 }}
-        gl={{ antialias: false, alpha: true }}
-        dpr={[1, 1.5]}
+        camera={{ position: [0, 0, 15], fov: 60 }}
+        gl={{ antialias: true, alpha: true }}
+        dpr={[1, 2]}
       >
+        <color attach="background" args={["#f8fafc"]} />
         <Suspense fallback={null}>
-           <ambientLight intensity={0.08} />
-           <pointLight position={[10, 10, 10]} intensity={0.3} color="#22c55e" />
-           <pointLight position={[-10, -10, -10]} intensity={0.2} color="#06b6d4" />
-
-          <ParticleField count={1500} />
-          <HolographicEarth />
-          <NeuralGrid />
-          <FloatingRings />
-
-          <EffectComposer>
-            <Bloom
-              intensity={0.5}
-              luminanceThreshold={0.2}
-              luminanceSmoothing={0.9}
-              mipmapBlur
-            />
-          </EffectComposer>
-
-          <AdaptiveDpr pixelated />
-          <Preload all />
+          <ambientLight intensity={0.5} />
+          <pointLight position={[10, 10, 10]} intensity={1} />
         </Suspense>
+        <Preload all />
+        <AdaptiveDpr pixelated={false} />
       </Canvas>
     </div>
   );

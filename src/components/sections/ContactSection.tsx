@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
 import { profile } from "@/data/portfolio";
-import { Linkedin, Mail, Send, ArrowUpRight } from "lucide-react";
+import { Linkedin, Mail, Send, ArrowUpRight, Github } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -19,8 +19,7 @@ const ContactSection = () => {
     <section id="contact" className="relative section-padding">
       <SectionHeading
         label="Connect"
-        title="Let's Build the Future"
-        subtitle="Ready to collaborate on the next generation of intelligent systems"
+        title="Get In Touch"
       />
 
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
@@ -69,12 +68,12 @@ const ContactSection = () => {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="w-full resize-none rounded-lg border border-border bg-muted/30 px-4 py-3 font-body text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary/50 focus:ring-1 focus:ring-primary/20"
-                  placeholder="Tell me about your project..."
+                  placeholder="Send a message..."
                 />
               </div>
-               <button
-                 type="submit"
-                 className="inline-flex w-full items-center justify-center gap-2 rounded border border-primary bg-primary/10 px-6 py-3 font-heading text-sm font-semibold tracking-wider text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_25px_hsl(142_70%_45%/0.3)]"
+              <button
+                type="submit"
+                className="inline-flex w-full items-center justify-center gap-2 rounded border border-primary bg-primary/10 px-6 py-3 font-heading text-sm font-semibold tracking-wider text-primary transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
               >
                 <Send size={16} />
                 Send Message
@@ -91,15 +90,12 @@ const ContactSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-col gap-6"
         >
-          <GlassCard hover glow="blue" className="p-8">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-              <Mail size={24} className="text-primary" />
-            </div>
+          <GlassCard className="p-8">
             <h3 className="mb-2 font-display text-lg font-bold text-foreground">
               Open to Opportunities
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Whether it's a groundbreaking AI project, a blockchain innovation, or a full-stack
+              Whether it's a groundbreaking AI project, a complex machine learning model, or a full-stack
               engineering challenge — I'm ready to architect the solution.
             </p>
           </GlassCard>
@@ -110,38 +106,81 @@ const ContactSection = () => {
             rel="noopener noreferrer"
             className="group"
           >
-            <GlassCard hover glow="cyan" className="flex items-center gap-4 p-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
-                <Linkedin size={24} className="text-accent" />
+            <GlassCard hover className="flex items-center gap-4 p-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100">
+                <Linkedin size={20} className="text-blue-600" />
               </div>
               <div className="flex-1">
                 <h4 className="font-heading text-sm font-bold text-foreground">
-                  Connect on LinkedIn
+                  LinkedIn
                 </h4>
-                <p className="text-xs text-muted-foreground">Let's expand our networks</p>
+                <p className="text-xs text-muted-foreground">Let's connect</p>
               </div>
               <ArrowUpRight
-                size={20}
-                className="text-muted-foreground transition-all group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                size={18}
+                className="text-muted-foreground transition-all group-hover:text-blue-600 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               />
             </GlassCard>
           </a>
 
-          {/* Particle convergence text */}
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group"
+          >
+            <GlassCard hover className="flex items-center gap-4 p-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <Github size={20} className="text-primary" />
+              </div>
+              <div className="flex-1">
+                <h4 className="font-heading text-sm font-bold text-foreground">
+                  GitHub
+                </h4>
+                <p className="text-xs text-muted-foreground">Check out my projects</p>
+              </div>
+              <ArrowUpRight
+                size={18}
+                className="text-muted-foreground transition-all group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </GlassCard>
+          </a>
+
+          <a
+            href={`mailto:${profile.email}`}
+            className="group"
+          >
+            <GlassCard hover className="flex items-center gap-4 p-4">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-rose-100">
+                <Mail size={20} className="text-rose-600" />
+              </div>
+              <div className="flex-1">
+                <h4 className="font-heading text-sm font-bold text-foreground">
+                  Email
+                </h4>
+                <p className="text-xs text-muted-foreground">{profile.email}</p>
+              </div>
+              <ArrowUpRight
+                size={18}
+                className="text-muted-foreground transition-all group-hover:text-rose-600 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </GlassCard>
+          </a>
+
+          {/* Final Call */}
           <div className="mt-auto text-center md:text-left">
-            <p className="font-display text-2xl font-bold">
-              <span className="gradient-text">Let's Build</span>{" "}
-              <span className="neon-text-cyan">the Future.</span>
+            <p className="font-display text-4xl font-black text-zinc-900 uppercase tracking-tight">
+              Let's Build.
             </p>
           </div>
         </motion.div>
       </div>
 
       {/* Footer */}
-      <div className="glow-line mx-auto mt-24 max-w-md" />
-      <div className="mt-8 text-center">
-        <p className="font-heading text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          © 2024 {profile.name} — Engineered with Precision
+      <div className="h-px w-full bg-zinc-100 mt-24 max-w-md mx-auto" />
+      <div className="mt-8 text-center px-6">
+        <p className="font-heading text-[10px] uppercase tracking-[0.4em] text-zinc-400">
+          © {new Date().getFullYear()} {profile.name}
         </p>
       </div>
     </section>

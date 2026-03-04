@@ -50,7 +50,7 @@ const HeroSection = () => {
           className="pt-10"
         >
           <a
-            href="#projects"
+            href="#about"
             className="group relative inline-flex flex-col items-center gap-6 transition-all"
           >
             <div className="w-14 h-14 rounded-full border border-zinc-100 flex items-center justify-center group-hover:border-zinc-900 transition-all duration-500 group-hover:scale-110">

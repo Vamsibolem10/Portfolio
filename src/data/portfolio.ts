@@ -17,8 +17,11 @@ export interface Skill {
 
 export const skills: Skill[] = [
   // Programming & Scripting Languages
-  { name: "Python / C", category: "Languages", level: 95, color: "#18181b" },
+  { name: "Python", category: "Languages", level: 95, color: "#18181b" },
   { name: "JavaScript / TypeScript", category: "Languages", level: 90, color: "#18181b" },
+
+  // Mobile
+  { name: "Capacitor / PWA", category: "Mobile App", level: 85, color: "#18181b" },
 
   // Frontend
   { name: "React.js / Next.js", category: "Frontend", level: 90, color: "#18181b" },
@@ -112,7 +115,7 @@ export const projects: Project[] = [
     subtitle: "Consistency Over Intensity",
     description: "A beautifully designed, minimalist habit-tracking application built for those who value consistency over intensity, focusing on 'showing up' every day.",
     techStack: ["React", "Node.js", "MongoDB", "Capacitor"],
-    category: "Full Stack / Mobile",
+    category: "Mobile Application",
     gradient: "from-blue-600 to-indigo-600",
     demoLink: "https://show-up-strong-production.up.railway.app/",
   }

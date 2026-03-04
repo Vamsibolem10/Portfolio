@@ -60,6 +60,13 @@
     line-height: 1.6;
   }
 
+  @media (min-width: 769px) {
+    * {
+      cursor: none !important;
+    }
+  }
+
+
   h1, h2, h3 {
     font-family: var(--font-display);
   }

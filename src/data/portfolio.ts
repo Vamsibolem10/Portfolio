@@ -43,7 +43,11 @@ export const skills: Skill[] = [
   // Machine Learning & Data Science
   { name: "ML (Reg, Class, Trees)", category: "AI / ML", level: 90, color: "#18181b" },
   { name: "CNN / TensorFlow", category: "AI / ML", level: 88, color: "#18181b" },
+  { name: "Generative AI / LLMs", category: "AI / ML", level: 85, color: "#18181b" },
+  { name: "NLP / HuggingFace", category: "AI / ML", level: 87, color: "#18181b" },
   { name: "PySpark / Pandas", category: "Data Science", level: 90, color: "#18181b" },
+  { name: "Scikit-Learn / SciPy", category: "Data Science", level: 88, color: "#18181b" },
+  { name: "Matplotlib / Seaborn", category: "Data Science", level: 85, color: "#18181b" },
 ];
 
 export interface Project {

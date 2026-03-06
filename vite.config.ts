@@ -18,6 +18,9 @@ export default defineConfig(({ mode }) => ({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: false, // already exists in public/manifest.webmanifest
+      workbox: {
+        navigateFallbackDenylist: [/^\/.*\.pdf$/],
+      }
     }),
     mode === "development" && componentTagger(),
   ].filter(Boolean),
